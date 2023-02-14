@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<h1>Bind  Method !!!</h1>
+<script type="text/javascript">
+
+const object1={
+  name:"Sunny",
+  city:"Indore",
+  setValue:function(par1,par2){
+    document.write(`my name is '${this.name}' and i staying at '${this.city}' and i love to read ${par1} and ${par2}`);
+
+  }
+
+         const object2={
+
+      name:"Vikash",
+      city:"Ujjain",
+  
+}
+object1.setValue.apply(object2,['noval','story']);
+
+
+
+
+
+
+</script>
+
+
+<!-- //1b553a3dbc9b43a4983b9121e875b876
+ -->
+</body>
+</html>

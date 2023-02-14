@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<h1>Bind  Method !!!</h1>
+<script type="text/javascript">
+// let object1=
+// {
+//   name:"Sunny",
+//   city:"Indore",
+//   getdetails:function(){
+//     document.write(`my name is '${this.name}' and i staying at '${this.city}' `)
+//   }
+
+// }
+// let object2={
+//   name:"Vikash",
+//   city:"Ujjain",
+// }
+// let show=object1.getdetails();
+// show();
+
+
+let object1={
+  name:"Sunny",
+  city:"Indore",
+
+  getdetails:function(){
+    document.write(`myname is '${this.name}' and i am from '${this.city}'`);
+
+  }
+}
+
+let object2={
+  name:"Vikash",
+  city:"Indore",
+
+}
+
+let show=object1.getdetails.bind(object2);
+show();
+</script>
+</body>
+</html>

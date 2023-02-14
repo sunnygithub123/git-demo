@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Closures Function....</title>
+</head>
+<body>
+	<h1>Closures Function....</h1>
+</body>
+<script type="text/javascript">
+//first Example in Clouser		
+
+
+function main()
+{
+
+
+ let i="i is  A local variable of Outer Function"
+ document.write(i,"<br/>");
+
+  function innerfun()
+  {
+  	let j="j is A inner function";
+  	document.write(j,"<br/>");
+  	document.write(i,"<br/>");
+  }
+
+  innerfun();
+  console.log(i);
+}
+
+ main();
+
+
+	</script>
+</html>

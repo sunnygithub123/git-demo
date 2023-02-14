@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hgh Order Function...</title>
+</head>
+<body>
+	<h1>High Order Function....</h1>
+</body>
+<script type="text/javascript">
+	const interviewQuestion=(name)=>{
+
+		if(name==="Sunny")
+		{
+			return function (topic)
+			{
+				console.log(`Hi ${name} what is Topic ${topic}?.pls Explain us `)
+
+			}
+		}if(name==="Thapa")
+		{
+			return function(topic)
+			{
+				console.log(`Hi ${name} what is Topic ${topic}?. pls Explain us`)
+			} 
+		}
+			if(name==="React topic Explain")
+			return function(topic){
+				console.log(`Hi ${name}.what is  ${topic}?. pls Explain us `)
+			}
+			else{
+
+				return function(){
+					console.log("WelCome to Interview...");
+				}
+			}
+	}
+
+	interviewQuestion("Sunny")("UI");
+	interviewQuestion("Kapil")("Full Stack Developer");
+	interviewQuestion("What is React")("Font  End Developer");
+
+	</script>
+</html>

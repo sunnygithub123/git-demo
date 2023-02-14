@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Var Let Const...</title>
+</head>
+<body>
+	<h1>Map Function....</h1>
+</body>
+<script type="text/javascript">
+		// var arr=[101,20,30,40,50]
+		// var newarr=arr.map(function(value){
+		// 	value++;
+		// 	return value;
+		// });
+		// console.log(arr);
+		// console.log(newarr);
+		
+
+		var arr=[
+
+		{price:"100",product:"Mobile"},
+		{price:"200",product:"Laptop"},
+		{price:"300",product:"Mic"}
+
+			];
+			//first example call karne ka 
+			// var newarr=arr.map(function(value){
+			// 	return value.price;
+			// });
+			
+			//sort example ek value ko return karne ka
+
+			var newarr=arr.map(value=>value.product);
+			
+			document.write(newarr);
+
+	</script>
+</html>

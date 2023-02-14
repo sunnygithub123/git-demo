@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Var Let Const...</title>
+</head>
+<body>
+	<h1>Async Await...</h1>
+</body>
+<script type="text/javascript">
+/*	console.log("a");
+	setTimeout(()=>{
+		console.log("b")
+	},1000)
+	console.log("c")*/
+
+	async function getData()
+		{
+				let handlePromise=new Promise((resolve,reject)=>{
+
+					setTimeout(()=>{
+
+						resolve("All Done.")
+
+					},3000);
+					
+				});
+
+				let handlePromise2=new Promise((resolve,reject)=>{
+
+					setTimeout(()=>{
+
+						resolve("All The Best..")
+						
+					},4000);
+				});
+
+	
+	let x = await handlePromise;
+	let x2 = await handlePromise2;
+
+	console.log(x,x2);
+	
+}
+	getData();
+
+
+
+	//like api call demo
+
+	// async function getData(){
+	// 	let data=await fetch("https://localurl");
+	// 	console.log(data);
+	// }
+
+
+	</script>
+</html>

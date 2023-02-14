@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promise</title>
+</head>
+<body>
+	<h1>Java Script Promise...</h1>
+</body>
+<script type="text/javascript">
+/*
+let a=undefined;
+let promisedata=new Promise((resolve,reject)=>
+{
+	setTimeout(()=>{
+
+		a="Hello Friends"
+		resolve("done")
+	},3000)
+
+
+})
+promisedata.then(()=>{
+	alert(a);
+}).catch(()=>{
+	alert("data not send..")
+})
+*/
+
+
+
+let promise=new Promise(function(resolve,rejected){
+
+	const x="sunny gwala"
+	const y="Mca Final Year.."
+
+	if(x===y)
+	{
+		resolve();
+	}
+	else{
+		reject();
+	}
+});
+promise.then(function()
+{
+	console.log('Success, you  Sunny gwala');
+}).catch(function(){
+	console.log('Mca Final Not Completed..');
+});
+
+	</script>
+</html>
